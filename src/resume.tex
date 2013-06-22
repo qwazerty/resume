@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{custom}                            % style options are 'casual' (default), 'classic', 'oldstyle', 'banking' and 'custom'
-\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -19,13 +19,13 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75, top=3cm, bottom=3cm]{geometry}
+\usepackage[scale=0.75, top=2.5cm, bottom=2.5cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Kevin}{Houdebert}
-\title{Stage développeur informatique}                               % optional, remove / comment the line if not wanted
+\title{Stage ingénieur informatique\newline{} en 2ème année de cycle ingénieur \newline{} de septembre à fin janvier}                               % optional, remove / comment the line if not wanted
 \address{62 rue d'Arcueil}{94250}{Gentilly}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{0611965656}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
@@ -33,7 +33,7 @@
 \email{kevin.houdebert@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{www.github.com/qwazerty}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{id}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -69,20 +69,20 @@
 \cventry{2010--2011}{C\# --  Un jeu en 2D RPG avec le framework XNA (Équipe de 4)}{TheLastTrial}{10 mois}{}{}
 
 \section{Expérience}
-\cventry{2012--2013}{Assis}{ACDC}{Paris}{}{Développement de site Web en PHP/JavaScript(jQuery) avec CMS WordPress}
+\cventry{2012--à ce jour}{Assistant C Dièse/Caml}{ACDC}{Paris}{}{Organisation de sujet, TP, et correction des élèves d'EPITA en première année}
 \cventry{2012}{Développeur Web (2 mois)}{Soixante Circuits}{Paris}{}{Développement de site Web en PHP/JavaScript(jQuery) avec CMS WordPress}
 \cventry{2012--2013}{Semestre universitaire (6 mois)}{Brock University}{Ontario, Canada}{}{Procedural Programming, Digital Electronics, Abstract Linear Algebra}
-\cventry{2011}{Stage saisonnier (2 mois)}{THALES}{Paris}{}{Mise à jour de base de donnée documentaire}
+\cventry{2011}{Stage saisonnier (2 mois)}{THALES Air Systems}{Paris}{}{Mise à jour de base de donnée documentaire}
 \cventry{2010--2011}{Gestion d’un site associatif de défense des droits (1 an)}{Association}{Paris}{}{Amélioration graphique du site web et publication d'articles régulièrement}
 
 \section{Langues}
-\cvitemwithcomment{Anglais}{Courant}{TOEIC Score : 905}
+\cvitemwithcomment{Anglais}{Courant}{TOEIC Score : 905/1000}
 \cvitemwithcomment{Polonais}{Parlé}{}
 
 \section{Compétences}
 \cvitem{Languages de programmation}{C, C++, C\#, Java, ASM, Ocaml, Python, \LaTeX}
 \cvdoubleitem{Éditeur}{Vim, Visual Studio, IntelliJ IDEA}{Modèlisation}{UML, MCD}
-\cvdoubleitem{Système}{Linux (Arch Linux/Mint), Windows 8}{Modèlisation}{UML, MCD}
+\cvitem{Système}{Linux (Arch Linux/Mint), Windows 8}
 
 \section{Hobbies}
 Programmation, Jeux vidéos, Musique (Métal, Electro)
@@ -113,22 +113,17 @@ Programmation, Jeux vidéos, Musique (Métal, Electro)
 \clearpage
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\recipient{Pythagore F.D.}{}
+\date{Le samedi 1 juin 2013}
+\opening{Madame, Monsieur,}
+\closing{Particulièrement attentif à votre réponse, veuillez croire, Madame, Monsieur, en l’assurance de mes sincères salutations.}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-Albert Einstein discovered that $e=mc^2$ in 1905.
-
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+Étudiant en école d'ingénieur en informatique, je souhaite effectuer un stage en entreprise pour parfaire ma formation. Votre entreprise correspond à mes attentes professionnelles et me permettra d'appronfondir mes connaissances dans mon domaine d'étude.
+\\~\\
+De part ma formation, j'ai une expérience technique en programmation aussi bien Linux que Windows, grâce aux projets scolaires, ainsi que des recherches personelles. À cela s'ajoute des notions en SQL, PHP, JavaScript, que je peut appronfondir si le besoin se montre. Mon domaine d'interêt se situe notament dans le developpement en C, C++, ainsi que tout se qui se rapproche de la sécurité système ou réseau, mais ne se limite pas qu'a cela et toute experience est bonne à prendre.
+\\~\\
 
 \makeletterclosing
 
