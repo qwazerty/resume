@@ -126,11 +126,11 @@
         \setlength{\fboxsep}{0pt}\fi%
       \framebox{\includegraphics[width=\@photowidth]{\@photo}}}}%
   % name and title
-  %\newlength{\makecvtitledetailswidth}\settowidth{\makecvtitledetailswidth}{\usebox{\makecvtitledetailsbox}}%
-  %\newlength{\makecvtitlepicturewidth}\settowidth{\makecvtitlepicturewidth}{\usebox{\makecvtitlepicturebox}}%
+  \newlength{\makecvtitledetailswidth}\settowidth{\makecvtitledetailswidth}{\usebox{\makecvtitledetailsbox}}%
+  \newlength{\makecvtitlepicturewidth}\settowidth{\makecvtitlepicturewidth}{\usebox{\makecvtitlepicturebox}}%
   % === HACK BECAUSE OF WEIRD ERROR ===
-    \setlength{\makecvtitlenamewidth}{\textwidth}%
-   
+  \setlength{\makecvtitlenamewidth}{20pc}%
+
   \begin{minipage}[b]{\makecvtitlenamewidth}%
     \namestyle{\@firstname\ \@lastname}%
     \ifthenelse{\equal{\@title}{}}{}{\\[1.25em]\titlestyle{\@title}}%

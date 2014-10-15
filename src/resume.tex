@@ -6,128 +6,100 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
-\moderncvstyle{custom}                            % style options are 'casual' (default), 'classic', 'oldstyle', 'banking' and 'custom'
-\moderncvcolor{purple}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{custom}
+\moderncvcolor{purple}
+\nopagenumbers{}
 
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.75, top=2.5cm, bottom=2.5cm]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[scale=0.82, top=2cm, bottom=2cm]{geometry}
 
 % personal data
 \name{Kevin}{Houdebert}
-\title{Stage ingénieur informatique\newline{} en 2ème année de cycle ingénieur \newline{} de septembre à fin janvier}                               % optional, remove / comment the line if not wanted
-\address{62 rue d'Arcueil}{94250}{Gentilly}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{0611965656}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{kevin.houdebert@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.github.com/qwazerty}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{id}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\title{Stage ingénieur informatique\newline{} en 5ème année de cycle ingénieur\newline{} de fevrier à fin juin}
+\address{1 rue Robert Schumann}{94170}{Le Perreux sur Marne}
+\phone[mobile]{0611965656}
+\email{kevin@qwazerty.eu}
+\homepage{github.com/qwazerty}
+\photo[64pt][0.4pt]{id}
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 %            content
-%----------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 \begin{document}
-%-----       resume       ---------------------------------------------------------
+%-----       resume       -----------------------------------------------------
 \makecvtitle
 
 \vspace{-1.5\baselineskip}
 
 \section{Formation}
-\cventry{2010--à ce jour}{École Pour l’Informatique et les Techniques Avancées}{EPITA}{Kremlin-Bicêtre}{}{2 ème année cycle ingénieur}  % arguments 3 to 6 can be left empty
-\cventry{2010}{BAC Scientifique}{Lycée Claude Bernard}{Paris 16}{\textit{Mention Assez Bien}}{}
-
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+\cventry{Sep 2010 -- Jun 2015 (Attendu)}
+    {École Pour l'Informatique et les Techniques Avancées}
+    {EPITA}{Kremlin-Bicêtre}{}
+    {Édutiant en 5ème année spécialisé Temps réel et embarqué}
+\cventry{2010}{BAC Scientifique}{Lycée Claude Bernard}
+    {Paris 16}{\textit{Mention Assez Bien}}{}
 
 \section{Projets réalisés}
-\cventry{2012--2013}{C++ --  Réalisation d'un compilateur de language fonctionnel Tiger (Équipe de 5)}{Tiger Compiler}{3 mois}{}{}
-\cventry{2012}{C --  Création d'un shell similaire à Bash, norme POSIX (Équipe de 4)}{42sh}{3 semaines}{}{}
-\cventry{2010--2011}{C\# --  Un jeu en 2D RPG avec le framework XNA (Équipe de 4)}{TheLastTrial}{10 mois}{}{}
+\cventry{2012 -- 2013}
+    {C++ --  Réalisation d'un compilateur de language fonctionnel Tiger (Équipe de 5)}
+    {Tiger Compiler}{3 mois}{}{}
+\cventry{2012}
+    {C -- Création d'un shell similaire à Bash, norme POSIX (Équipe de 4)}
+    {42sh}{3 semaines}{}{}
+\cventry{2010 -- 2011}
+    {C\# --  Un jeu en 2D RPG avec le framework XNA (Équipe de 4)}
+    {TheLastTrial}{10 mois}{}{}
 
 \section{Expérience}
-\cventry{2012--à ce jour}{Assistant C Dièse/Caml}{ACDC}{Paris}{}{Organisation de sujet, TP, et correction des élèves d'EPITA en première année}
-\cventry{2012}{Développeur Web (2 mois)}{Soixante Circuits}{Paris}{}{Développement de site Web en PHP/JavaScript(jQuery) avec CMS WordPress}
-\cventry{2012--2013}{Semestre universitaire (6 mois)}{Brock University}{Ontario, Canada}{}{Procedural Programming, Digital Electronics, Abstract Linear Algebra}
-\cventry{2011}{Stage saisonnier (2 mois)}{THALES Air Systems}{Paris}{}{Mise à jour de base de donnée documentaire}
-\cventry{2010--2011}{Gestion d’un site associatif de défense des droits (1 an)}{Association}{Paris}{}{Amélioration graphique du site web et publication d'articles régulièrement}
+\cventry{Sep 2012 -- Jun 2013}
+    {Assistant C Dièse/Caml}{ACDC}{Paris}{}
+    {Organisation de sujet, TP, et correction des élèves d'EPITA en première année}
+\cventry{Jun 2012 -- Aug 2012}
+    {Développeur Web (2 mois)}{Soixante Circuits}{Paris}{}
+    {Développement de site Web en PHP/JavaScript(jQuery) avec CMS WordPress}
+\cventry{Jan 2012 -- Jun 2012}
+    {Semestre universitaire (6 mois)}{Brock University}{Ontario, Canada}{}
+    {Procedural Programming, Digital Electronics, Abstract Linear Algebra}
+\cventry{Jun 2011 -- Jul 2011}
+    {Stage saisonnier (2 mois)}{THALES Air Systems}{Paris}{}
+    {Mise à jour de base de donnée documentaire}
+\cventry{2010 -- 2011}
+    {Gestion d'un site associatif de défense des droits (1 an)}
+    {Association}{Paris}{}
+    {Amélioration graphique du site web et mise en forme d'articles régulièrement}
 
-\section{Langues}
-\cvitemwithcomment{Anglais}{Courant}{TOEIC Score : 905/1000}
-\cvitemwithcomment{Polonais}{Parlé}{}
-
-\section{Compétences}
-\cvitem{Languages de programmation}{C, C++, C\#, Java, ASM, Ocaml, Python, \LaTeX}
-\cvdoubleitem{Éditeur}{Vim, Visual Studio, IntelliJ IDEA}{Modèlisation}{UML, MCD}
-\cvitem{Système}{Linux (Arch Linux/Mint), Windows 8}
+\section{Compétances}
+\cvdoubleitem{Langues}{sh, Python, C, C++, C\#, Java, ASM, Ocaml}
+    {Tools}{Vim, Git, IntelliJ IDEA}
+\cvdoubleitem{Systemes}{GNU/Linux (Arch Linux/Debian), \newline{} FreeBSD, Windows}{}{}
+\cvdoubleitem{Anglais}{Courant (TOEIC: 905/1000)}{Français}{Langue matternelle}
+\cvitem{Polonais}{Parlé}
 
 \section{Hobbies}
-Programmation, Jeux vidéos, Musique (Métal, Electro)
-
-%\section{References}
-%\begin{cvcolumns}
-%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+Programmation, Musique (Métal, Electro), Jeux vidéos
 
 \clearpage
 %-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Pythagore F.D.}{}
-\date{Le samedi 1 juin 2013}
-\opening{Madame, Monsieur,}
-\closing{Particulièrement attentif à votre réponse, veuillez croire, Madame, Monsieur, en l’assurance de mes sincères salutations.}
-%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-Étudiant en école d'ingénieur en informatique, je souhaite effectuer un stage en entreprise pour parfaire ma formation. Votre entreprise correspond à mes attentes professionnelles et me permettra d'appronfondir mes connaissances dans mon domaine d'étude.
-\\~\\
-De part ma formation, j'ai une expérience technique en programmation aussi bien Linux que Windows, grâce aux projets scolaires, ainsi que des recherches personelles. À cela s'ajoute des notions en SQL, PHP, JavaScript, que je peut appronfondir si le besoin se montre. Mon domaine d'interêt se situe notament dans le developpement en C, C++, ainsi que tout se qui se rapproche de la sécurité système ou réseau, mais ne se limite pas qu'a cela et toute experience est bonne à prendre.
-\\~\\
-
-\makeletterclosing
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+% =============================================================================
+% #                  UNCOMMENT FOLLOWING FOR THE LETTER                       #
+% =============================================================================
+%% recipient data
+%\recipient{RECIPIENT}{}
+%\date{DATE}
+%\opening{OPENING}
+%\closing{CLOSING}
+%%\enclosure[Attached]{curriculum vit\ae{}}
+%\makelettertitle
+%
+%FIXME
+%
+%\makeletterclosing
 \end{document}
 
 
