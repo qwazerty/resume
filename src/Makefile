@@ -1,13 +1,11 @@
-SRC = resume.tex
 LATEX = xelatex
 
-SRC = resume.tex
-OUT = resume.pdf
+OUT = resume.pdf letter.pdf
 
 all: $(OUT)
 
-$(OUT): $(SRC)
-	$(LATEX) $(SRC)
+%.pdf: %.tex
+	$(LATEX) $<
 
 clean:
 	$(RM) *.pdf
