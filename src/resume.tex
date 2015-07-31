@@ -1,13 +1,7 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
 \documentclass[10pt,a4paper,sans]{moderncv}
 
 % moderncv themes
+\usepackage[french]{babel}
 \moderncvstyle{custom}
 \moderncvcolor{purple}
 \nopagenumbers{}
@@ -20,11 +14,9 @@
 
 % personal data
 \name{Kevin}{Houdebert}
-\title{Recherche stage DevOps\newline{}
- en 5ème année de cycle ingénieur\newline{}
- de fevrier à fin juin}
-\address{1 rue Robert Schumann}{94170}{Le Perreux sur Marne}
-\phone[mobile]{0611965656}
+\title{Ingénieur système et infrastructure}
+\address{1 rue Robert Schumann}{Le Perreux sur Marne - 94170}
+\phone[mobile]{06 11 96 56 56}
 \email{kevin@qwazerty.eu}
 \homepage{github.com/qwazerty}
 \photo[64pt][0.4pt]{id}
@@ -36,22 +28,22 @@
 %-----       resume       -----------------------------------------------------
 \makecvtitle
 
-\vspace{-1.5\baselineskip}
+\vspace{-3\baselineskip}
 
 \section{Formation}
-\cventry{Sep 2010 -- Jun 2015 (Attendu)}
+\cventry{sept 2010 -- sept 2015 (attendu)}
     {École Pour l'Informatique et les Techniques Avancées}
     {EPITA}{Kremlin-Bicêtre}{}
-    {Édutiant en 5ème année spécialisé Temps réel et embarqué}
-\cventry{Jan 2012 -- Jun 2012}
-    {Semestre universitaire (6 mois)}{Brock University}{Ontario, Canada}{}
+    {Étudiant en 5\up{ème} année, spécialité temps réel et embarqué}
+\cventry{janv 2012 -- juin 2012}
+    {Semestre universitaire}{Brock University}{Ontario, Canada}{}
     {Procedural Programming, Digital Electronics, Abstract Linear Algebra}
 \cventry{2010}{BAC Scientifique}{Lycée Claude Bernard}
-    {Paris 16}{\textit{Mention Assez Bien}}{}
+    {Paris}{\textit{Mention Assez Bien}}{}
 
 \section{Projets réalisés}
 \cventry{2014}
-    {C -- Execution de code dans une VM en utilisant l'API kernel de KVM}
+    {C -- Éxecution de code dans une VM en utilisant l'API kernel de KVM}
     {MyKVM}{2 mois}{}{}
 \cventry{2014}
     {C++ -- Simulation du comportement du Pipeline MIPS}
@@ -61,35 +53,38 @@
     {42sh}{3 semaines}{}{}
 
 \section{Expérience}
-\cventry{Jan 2014 -- Dec 2014}
-    {Administrateur système et réseau Linux}{YAKA - ACU}{Paris}{}
+\cventry{mars 2015 -- sept 2015}
+    {Stage ingénieur système et infrastructure}{Smile Open Source Solutions}{}{}
+    {Étude déploiement continu avec Jenkins, Ansible, et OpenStack (Linux)}
+\cventry{janv 2014 -- déc 2014}
+    {Administrateur système et réseau Linux}{YAKA - ACU}{}{}
     {Maintenance de services pour les élèves d'EPITA (1000 étudiants) (Linux)}
-\cventry{Aug 2013 -- Dec 2013}
-    {Developpeur d'application distribué}{Qarnot Computing}{Paris}{}
-    {Implémentation d'une architecture client/serveur sur cartes embarqués (Linux, Docker, Python, C)}
-\cventry{Sep 2012 -- Jun 2013}
-    {Assistant C Dièse/Caml}{ACDC}{Paris}{}
-    {Organisation de sujet, TP, et correction des élèves d'EPITA en première année (Linux, C\#, Caml)}
-\cventry{Jun 2012 -- Aug 2012}
-    {Développeur Web (2 mois)}{Soixante Circuits}{Paris}{}
-    {Développement de site Web en PHP/JavaScript(jQuery) avec CMS WordPress}
-\cventry{Jun 2011 -- Jul 2011}
-    {Stage saisonnier (2 mois)}{THALES Air Systems}{Paris}{}
-    {Mise à jour de base de donnée documentaire}
+\cventry{août 2013 -- déc 2013}
+    {Stage développeur d'applications distribués}{Qarnot Computing}{}{}
+    {Implémentation d'une architecture client/serveur sur cartes embarquées (Linux, Docker, Python, C)}
+\cventry{sept 2012 -- juin 2013}
+    {Assistant C\#/Caml}{ACDC}{}{}
+    {Organisation de sujets, TP, et correction des élèves d'EPITA en première année (Linux, C\#, Caml)}
+\cventry{juin 2012 -- août 2012}
+    {Stage développeur Web}{Soixante Circuits}{}{}
+    {Développement de sites Web en PHP/JavaScript (jQuery) avec CMS WordPress}
+\cventry{juin 2011 -- juill 2011}
+    {Stage saisonnier}{THALES Air Systems}{}{}
+    {Mise à jour de base de données documentaire}
 \cventry{2010 -- 2011}
-    {Gestion d'un site associatif de défense des droits (1 an)}
-    {Association}{Paris}{}
+    {Gestion d'un site associatif de défense des droits}
+    {Association}{}{}
     {Amélioration graphique du site web et mise en forme d'articles régulièrement}
 
 \section{Compétences}
-\cvdoubleitem{Langues}{sh, Python, C, C++, C\#, Java, ASM}
-    {Outils}{Git, Puppet, Docker, Libvirt}
-\cvdoubleitem{Systemes}{GNU/Linux (Arch Linux/Debian), \newline{} FreeBSD, Windows}{}{}
+\cvdoubleitem{Langages}{sh, Python, C, C++, C\#, Java, \newline{}ASM (SPARC, x86\_64)}
+    {Systemes}{GNU/Linux (Arch Linux/Debian), \newline{}FreeBSD, Windows}
+\cvdoubleitem{Outils}{Git, Puppet, Ansible, Docker, Libvirt}{}{}
 \cvdoubleitem{Anglais}{Courant (TOEIC: 905/990)}{Français}{Langue maternelle}
 \cvitem{Polonais}{Parlé}
 
-\section{Hobbies}
-Programmation, Musique (Métal, Electro), Jeux vidéos
+\section{Centres d'intêret}
+Programmation, musique (métal, électro), jeux-vidéos
 
 \clearpage
 %-----       letter       ---------------------------------------------------------

@@ -1,6 +1,7 @@
 LATEX = xelatex
 
-OUT = resume.pdf letter.pdf
+OUT = resume.pdf
+#OUT = resume.pdf letter.pdf
 
 all: $(OUT)
 
